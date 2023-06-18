@@ -1,0 +1,125 @@
+
+genAll(filename, structs) ::=<<
+<genHeader(filename)>
+
+<genStructs(structs)>
+
+<genEnd()>
+>>
+genHeader(filename) ::=
+<<
+#ifndef <filename>_h
+#define <filename>_h
+
+#ifndef rti_me_cpp_hxx
+#include "rti_me_cpp.hxx"
+#endif
+
+#ifdef NDDS_USER_DLL_EXPORT
+#if (defined(RTI_WIN32) || defined(RTI_WINCE))
+/* If the code is building on Windows, start exporting symbols. */
+#undef NDDSUSERDllExport
+#define NDDSUSERDllExport __declspec(dllexport)
+#endif
+#else
+#undef NDDSUSERDllExport
+#define NDDSUSERDllExport
+#endif
+>>
+
+genEnd() ::=
+<<
+#ifdef NDDS_USER_DLL_EXPORT
+#if (defined(RTI_WIN32) || defined(RTI_WINCE))
+/* If the code is building on Windows, stop exporting symbols. */
+#undef NDDSUSERDllExport
+#define NDDSUSERDllExport
+#endif
+#endif
+
+#endif /* no_module */
+>>
+
+genStructs(structs) ::=
+<<
+<structs.structList :{ struct |<genStruct(struct)>} ; separator="\n">
+>>
+
+genStruct(struct) ::=
+<<
+struct <struct.name>Seq;
+class <struct.name>TypeSupport;
+class <struct.name>DataWriter;
+class <struct.name>DataReader;
+class <struct.name>
+{
+  public:
+    typedef struct <struct.name>Seq Seq;
+    typedef <struct.name>TypeSupport TypeSupport;
+    typedef <struct.name>DataWriter DataWriter;
+    typedef <struct.name>DataReader DataReader;
+
+    <genVariables(struct)>
+};
+
+extern const char *<struct.name>TYPENAME;
+
+REDA_DEFINE_SEQUENCE_STRUCT(<struct.name>Seq, <struct.name>);
+
+REDA_DEFINE_SEQUENCE_IN_C(<struct.name>Seq,<struct.name>);
+
+NDDSUSERDllExport extern RTI_BOOL
+<genInitialize(struct)>
+
+NDDSUSERDllExport extern RTI_BOOL
+<genFinitialize(struct)>
+>>
+
+genVariables(struct) ::=
+<<
+<struct.variableList :{ variable |<genVariable(variable)>} ; separator="\n">
+>>
+
+genVariable(variable) ::=
+<<
+<if(variable.isimple)>
+CDR_<variable.type> <variable.id>;
+<else>
+CDR_<variable.type> <variable.id> = <variable.value>;
+<endif>
+>>
+
+genInitialize(struct) ::=<<
+<struct.name>_initialize(<struct.name>* sample)
+{
+    <genVariablesInitialization(struct)>
+
+    return RTI_TRUE;
+}
+>>
+genVariablesInitialization(struct)::=
+<<
+<struct.variableList :{ variable |<genVariableInitialization(variable)>} ; separator="\n">
+>>
+genVariableInitialization(variable)::=
+<<
+<if(variable.istring)>
+if (!CDR_String_initialize(&sample-><variable.id>, (255)))
+{
+    return RTI_FALSE;
+}
+<else>
+CDR_Primitive_init_<variable.type>(&sample-><variable.id>);
+<endif>
+>>
+
+
+genFinitialize(struct) ::=<<
+<struct.name>_finalize(<struct.name>* sample)
+{
+    UNUSED_ARG(sample);
+    <struct.variableList :{ variable |<genVariableFnitialization(variable)>} ; separator="\n">
+    return RTI_TRUE;
+}
+>>
+
