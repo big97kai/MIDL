@@ -1,0 +1,22 @@
+Specification
+    Definition
+        TypeDecl
+            Struct
+            ID
+            MemberList
+                TypeSpecific
+                    BaseType
+                        Int16
+                Declarators
+                    Declarator
+                        SimpleDeclarator
+                            ID
+                            OrNode
+                                XorNode
+                                    AndNode
+                                        ShiftNode
+                                            AddNode
+                                                MultNode
+                                                    UnaryNode
+                                                        Literal
+                                                            Integer

@@ -42,7 +42,7 @@ public class AntlrToLiteral extends MIDLBaseVisitor<Literal> {
      */
     @Override
     public Literal visitLiteralToInteger(MIDLParser.LiteralToIntegerContext ctx) {
-        System.out.println(CURRENTTYPENAME);
+
         Token idToken = ctx.INTEGER().getSymbol();
         int line = idToken.getLine();
         int column = idToken.getCharPositionInLine() + 1;
@@ -222,7 +222,7 @@ public class AntlrToLiteral extends MIDLBaseVisitor<Literal> {
 
         expOneOutPut.addOneName("Char", indentationTimes);
         java.lang.String value = ctx.getChild(0).getText();
-        System.out.println(CURRENTTYPENAME);
+
         if(CURRENTTYPE == BASETYPE && CURRENTTYPENAME.equals("Char") && value.length() == 3){
 
         }else {

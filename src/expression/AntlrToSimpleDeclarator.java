@@ -69,7 +69,7 @@ public class AntlrToSimpleDeclarator extends MIDLBaseVisitor<SimpleDeclarator> {
             struct.addViriable(variable);
 
         } else if (CURRENTTYPE == SCOPE) {
-            System.out.println(MIDLapp.CURRENTTYPENAME);
+
             Variable variable = new Variable(id, MIDLapp.CURRENTTYPENAME);
 
             variable.setIsSimple(true);

@@ -47,12 +47,15 @@ public class AntlrToSpecification extends MIDLBaseVisitor<Specification> {
         Specification specification = new Specification();
         Structs structs = new Structs();
 
+
         AntlrToDefinition definitionVisitor = new AntlrToDefinition(semanticErrors, indentationTimes+1, expOneOutPut, symbolTable, structs);
+
         for (int i = 0; i < ctx.getChildCount(); i++) {
 
             if (i == ctx.getChildCount() - 1) {
 
             } else {
+                System.out.println(ctx.getChild(i).getText());
                 expOneOutPut.addOneName("Definition", indentationTimes);
                 specification.addDefinition(definitionVisitor.visit(ctx.getChild(i)));
             }

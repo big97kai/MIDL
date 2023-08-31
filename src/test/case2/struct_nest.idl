@@ -4,6 +4,6 @@ module space{
 	};
 	struct B{
 		long i2=100;
-		space::A i3;
+		A i3;
 	};
 };

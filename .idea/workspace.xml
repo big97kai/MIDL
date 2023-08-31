@@ -5,75 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be6e4809-6c5b-48a0-bcad-cba517992ede" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MIDLCompiler.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/antlr4/MIDL.g4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ExpOneOutPut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/MIDLapp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Scope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ScopeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/StTranslate.stg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Symbol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/SymbolTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/VariableType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/module_struct.idl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/Experiment2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/Genration/Struct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/Genration/Structs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/Genration/Variable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/declarator/ArrayDeclarator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/declarator/Declarator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/declarator/Declarators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/declarator/SimpleDeclarator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/expression/CalculateNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/expression/ExpList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/expression/Expression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/expression/ExpressionNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/expression/UnaryExpr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/literal/Boolean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/literal/Char.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/literal/FloatingPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/literal/Integer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/literal/Literal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/literal/String.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/struct/Definition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/struct/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/struct/MemberList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/struct/Module.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/struct/SimpleStruct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/struct/Specification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/struct/StructType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/struct/TypeDecl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/type/BaseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/type/ScopedName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bean/type/TypeSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToArrayDeclarator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToBaseTypeSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToDeclarator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToDeclarators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToExpList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToExpressionNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToFP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToIntegerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToLiteral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToMemberList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToScopedName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToSignedInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToSimpleDeclarator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToStructType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToTypeDecl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToTypeSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToUnaryExpr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/expression/AntlrToUnsigndInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Experiment2.hxx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Experiment2.hxx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/SyntaxOut.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/SyntaxOut.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/module_struct.idl" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/module_struct.idl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/expression/AntlrToLiteral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/expression/AntlrToLiteral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/expression/AntlrToSimpleDeclarator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/expression/AntlrToSimpleDeclarator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/expression/AntlrToSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/expression/AntlrToSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/case2/struct_nest.idl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/case2/struct_nest.idl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,21 +36,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/ST-4.3.4.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/ST-4.3.4.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="bean" />
@@ -176,7 +115,10 @@
       <workItem from="1686145294773" duration="24168000" />
       <workItem from="1686745212512" duration="22328000" />
       <workItem from="1686921193962" duration="389000" />
-      <workItem from="1686922180508" duration="25421000" />
+      <workItem from="1686922180508" duration="26018000" />
+      <workItem from="1687072012315" duration="3656000" />
+      <workItem from="1691049351274" duration="101000" />
+      <workItem from="1691049461839" duration="20000" />
     </task>
     <servers />
   </component>
@@ -184,15 +126,6 @@
     <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/expression/AntlrToSpecification.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="typeSpec" />
